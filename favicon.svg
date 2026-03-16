@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <circle cx="16" cy="16" r="14" fill="#008cc9" stroke="#4a312c" stroke-width="1"/>
+  <!-- Mug 1 (Yellowish) -->
+  <rect x="10" y="10" width="6" height="10" rx="1" fill="#fec310" stroke="white" stroke-width="0.5"/>
+  <path d="M10 10 h6 v2 h-6 z" fill="white" opacity="0.8"/>
+  <path d="M16 12 c2 0 2 6 0 6" fill="none" stroke="white" stroke-width="1"/>
+  
+  <!-- Mug 2 (Reddish) -->
+  <rect x="16" y="10" width="6" height="10" rx="1" fill="#a3311e" stroke="white" stroke-width="0.5"/>
+  <path d="M16 10 h6 v2 h-6 z" fill="white" opacity="0.8"/>
+  <path d="M16 12 c-2 0 -2 6 0 6" fill="none" stroke="white" stroke-width="1" transform="rotate(180 19 15)"/>
+  
+  <!-- Banner -->
+  <path d="M4 22 q12 4 24 0 v4 q-12 4 -24 0 z" fill="#fec310" stroke="#4a312c" stroke-width="0.5"/>
+  <text x="16" y="25" font-family="Arial, sans-serif" font-size="3" font-weight="bold" text-anchor="middle" fill="#4a312c">BURP</text>
+</svg>
