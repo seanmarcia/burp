@@ -18,7 +18,7 @@ const SOFB = () => {
     <div className="bg-beer-cream/10 min-h-screen py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="relative bg-beer-blue text-white rounded-3xl p-8 md:p-20 overflow-hidden shadow-2xl mb-16">
+        <div className="relative bg-beer-brown text-beer-cream rounded-3xl p-8 md:p-20 overflow-hidden shadow-2xl mb-16">
           <div className="absolute top-0 right-0 p-8 opacity-10 hidden md:block">
             <Trophy className="h-96 w-96" />
           </div>
@@ -27,10 +27,10 @@ const SOFB = () => {
               <Award className="h-4 w-4" />
               32nd Annual Competition
             </div>
-            <h1 className="text-5xl md:text-7xl mb-6 text-white leading-tight">
+            <h1 className="text-5xl md:text-7xl mb-6 text-beer-cream leading-tight">
               Spirit of Free Beer <span className="text-beer-amber">2026</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-10 leading-relaxed">
+            <p className="text-xl md:text-2xl text-beer-cream/80 mb-10 leading-relaxed">
               The Mid-Atlantic's premier homebrewing competition. Celebrating 45 years of fermentation expertise, hosted by BURP since 1981.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
