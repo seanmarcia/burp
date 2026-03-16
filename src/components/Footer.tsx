@@ -24,10 +24,11 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider text-beer-amber mb-4">Resources</h3>
             <ul className="space-y-2 text-sm text-beer-cream/70">
+              <li><Link to="/newsletter" className="hover:text-beer-cream transition-colors">BURP News</Link></li>
               <li><Link to="/enlightenment" className="hover:text-beer-cream transition-colors">Brewing Techniques</Link></li>
               <li><Link to="/enlightenment" className="hover:text-beer-cream transition-colors">Recipes</Link></li>
               <li><Link to="/competitions" className="hover:text-beer-cream transition-colors">Competition Guidelines</Link></li>
-              <li><Link to="/about" className="hover:text-beer-cream transition-colors">Bylaws</Link></li>
+              <li><Link to="/about/bylaws" className="hover:text-beer-cream transition-colors">Bylaws</Link></li>
             </ul>
           </div>
 
@@ -35,8 +36,7 @@ const Footer = () => {
             <h3 className="text-sm font-bold uppercase tracking-wider text-beer-amber mb-4">Community</h3>
             <ul className="space-y-2 text-sm text-beer-cream/70">
               <li><Link to="/events" className="hover:text-beer-cream transition-colors">Meetings</Link></li>
-              <li><a href="#" className="hover:text-beer-cream transition-colors">Forum</a></li>
-              <li><a href="#" className="hover:text-beer-cream transition-colors">Photo Gallery</a></li>
+              <li><Link to="/membership" className="hover:text-beer-cream transition-colors">Join BURP</Link></li>
               <li><Link to="/about" className="hover:text-beer-cream transition-colors">Officers</Link></li>
             </ul>
           </div>

@@ -19,13 +19,14 @@ const Navbar = () => {
               <Link to="/events" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">Events</Link>
               <Link to="/enlightenment" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">Enlightenment</Link>
               <Link to="/competitions" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">Competitions</Link>
+              <Link to="/newsletter" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">BURP News</Link>
               <Link to="/about" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">About</Link>
             </div>
           </div>
           <div className="hidden md:flex items-center">
-            <button className="bg-beer-amber text-beer-brown px-4 py-2 rounded-md text-sm font-bold hover:bg-opacity-90 transition shadow-sm">
+            <Link to="/membership" className="bg-beer-amber text-beer-brown px-4 py-2 rounded-md text-sm font-bold hover:bg-opacity-90 transition shadow-sm">
               Join BURP
-            </button>
+            </Link>
           </div>
           <div className="flex items-center md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="p-2 text-beer-cream">
@@ -41,11 +42,12 @@ const Navbar = () => {
             <Link to="/events" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">Events</Link>
             <Link to="/enlightenment" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">Enlightenment</Link>
             <Link to="/competitions" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">Competitions</Link>
+            <Link to="/newsletter" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">BURP News</Link>
             <Link to="/about" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">About</Link>
             <div className="pt-4 px-3">
-              <button className="w-full bg-beer-amber text-beer-brown px-4 py-2 rounded-md text-base font-bold shadow-sm">
+              <Link to="/membership" className="block w-full bg-beer-amber text-beer-brown px-4 py-2 rounded-md text-base font-bold shadow-sm text-center">
                 Join BURP
-              </button>
+              </Link>
             </div>
           </div>
         </div>

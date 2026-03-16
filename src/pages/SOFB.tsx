@@ -18,7 +18,7 @@ const SOFB = () => {
     <div className="bg-beer-cream/10 min-h-screen py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="relative bg-beer-brown text-beer-cream rounded-3xl p-8 md:p-20 overflow-hidden shadow-2xl mb-16">
+        <div className="relative bg-beer-blue text-white rounded-3xl p-8 md:p-20 overflow-hidden shadow-2xl mb-16">
           <div className="absolute top-0 right-0 p-8 opacity-10 hidden md:block">
             <Trophy className="h-96 w-96" />
           </div>
@@ -27,10 +27,10 @@ const SOFB = () => {
               <Award className="h-4 w-4" />
               32nd Annual Competition
             </div>
-            <h1 className="text-5xl md:text-7xl mb-6 text-beer-cream leading-tight">
+            <h1 className="text-5xl md:text-7xl mb-6 text-white leading-tight">
               Spirit of Free Beer <span className="text-beer-amber">2026</span>
             </h1>
-            <p className="text-xl md:text-2xl text-beer-cream/80 mb-10 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/80 mb-10 leading-relaxed">
               The Mid-Atlantic's premier homebrewing competition. Celebrating 45 years of fermentation expertise, hosted by BURP since 1981.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -53,28 +53,28 @@ const SOFB = () => {
                 Key Dates & Locations
               </h2>
               <div className="space-y-6">
-                <div className="flex gap-6 items-start p-6 bg-beer-cream/30 rounded-2xl">
-                  <div className="bg-beer-brown text-beer-cream px-4 py-2 rounded-xl text-center min-w-[100px]">
+                <div className="flex gap-6 items-start p-6 bg-beer-cream/30 rounded-2xl border-l-4 border-l-beer-red">
+                  <div className="bg-beer-red text-white px-4 py-2 rounded-xl text-center min-w-[100px] shadow-sm">
                     <span className="block text-sm uppercase font-bold">April</span>
                     <span className="block text-3xl font-bold">12</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Main Competition Judging</h3>
                     <p className="text-beer-brown/70 flex items-center gap-2 mb-2">
-                      <MapPin className="h-4 w-4" /> Silver Branch Rockville Beerworks
+                      <MapPin className="h-4 w-4 text-beer-red" /> Silver Branch Rockville Beerworks
                     </p>
                     <p className="text-beer-brown/70 text-sm">Official BJCP evaluation sessions (Morning, Afternoon, and BOS).</p>
                   </div>
                 </div>
-                <div className="flex gap-6 items-start p-6 bg-beer-cream/30 rounded-2xl border-2 border-beer-amber/20">
-                  <div className="bg-beer-amber text-beer-brown px-4 py-2 rounded-xl text-center min-w-[100px]">
+                <div className="flex gap-6 items-start p-6 bg-beer-cream/30 rounded-2xl border-2 border-beer-amber/20 border-l-4 border-l-beer-blue">
+                  <div className="bg-beer-blue text-white px-4 py-2 rounded-xl text-center min-w-[100px] shadow-sm">
                     <span className="block text-sm uppercase font-bold">April</span>
                     <span className="block text-3xl font-bold">19</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">SOFB "Afters" Meeting</h3>
                     <p className="text-beer-brown/70 flex items-center gap-2 mb-2">
-                      <MapPin className="h-4 w-4" /> Rockville, MD
+                      <MapPin className="h-4 w-4 text-beer-blue" /> Rockville, MD
                     </p>
                     <p className="text-beer-brown/70 text-sm">Awards ceremony and social gathering. Sample the leftovers and celebrate the winners.</p>
                   </div>
@@ -84,7 +84,7 @@ const SOFB = () => {
 
             <section className="bg-white rounded-3xl p-10 border border-beer-brown/5 shadow-sm">
               <h2 className="text-3xl mb-8 flex items-center gap-3">
-                <Beaker className="text-beer-amber h-8 w-8" />
+                <Beaker className="text-beer-red h-8 w-8" />
                 Featured Categories
               </h2>
               <p className="text-lg text-beer-brown/70 mb-8 leading-relaxed">
@@ -92,8 +92,8 @@ const SOFB = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {bjcpCategories.map((cat, i) => (
-                  <div key={i} className="px-4 py-3 bg-beer-brown/5 border border-beer-brown/10 rounded-xl flex items-center gap-3">
-                    <span className="bg-beer-brown text-beer-cream text-xs font-bold px-2 py-1 rounded">
+                  <div key={i} className="px-4 py-3 bg-beer-blue/5 border border-beer-blue/10 rounded-xl flex items-center gap-3">
+                    <span className="bg-beer-blue text-white text-xs font-bold px-2 py-1 rounded">
                       {cat.code}
                     </span>
                     <span className="text-sm font-bold text-beer-brown/80">{cat.name}</span>
@@ -109,7 +109,7 @@ const SOFB = () => {
           <div className="space-y-8">
             <div className="bg-beer-brown text-beer-cream rounded-3xl p-8 shadow-xl relative overflow-hidden">
               <div className="relative z-10">
-                <h3 className="text-2xl text-beer-amber mb-6">Competition Rules</h3>
+                <h3 className="text-2xl text-beer-amber mb-6 font-bold uppercase tracking-tight">Competition Rules</h3>
                 <ul className="space-y-4 mb-8">
                   {[
                     'Entry fee: $10 per entry.',
@@ -118,13 +118,13 @@ const SOFB = () => {
                     'Attach labels with rubber bands only.',
                     'Shipping window: Feb 1 - April 3.',
                   ].map((rule, i) => (
-                    <li key={i} className="flex gap-3 text-beer-cream/80 text-sm">
+                    <li key={i} className="flex gap-3 text-beer-cream/80 text-sm font-medium">
                       <CheckCircle className="h-5 w-5 text-beer-amber shrink-0" />
                       {rule}
                     </li>
                   ))}
                 </ul>
-                <Link to="/sofb/rules" className="block w-full py-4 bg-beer-amber text-beer-brown rounded-xl font-bold hover:bg-opacity-90 transition text-center">
+                <Link to="/sofb/rules" className="block w-full py-4 bg-beer-amber text-beer-brown rounded-xl font-bold hover:bg-opacity-90 transition text-center shadow-lg">
                   Full Competition Rules
                 </Link>
               </div>

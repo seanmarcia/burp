@@ -105,9 +105,12 @@ const About = () => {
                   <History className="h-4 w-4" />
                   View Historical Officers
                 </Link>
-                <button className="w-full py-3 bg-beer-cream/50 text-beer-brown rounded-xl font-bold text-sm hover:bg-beer-brown hover:text-white transition">
+                <Link to="/about/bylaws" className="flex items-center justify-center gap-2 w-full py-3 bg-beer-cream/50 text-beer-brown rounded-xl font-bold text-sm hover:bg-beer-brown hover:text-white transition">
                   Read the BURP Bylaws
-                </button>
+                </Link>
+                <Link to="/about/officer-duties" className="flex items-center justify-center gap-2 w-full py-3 border-2 border-beer-brown/10 text-beer-brown rounded-xl font-bold text-sm hover:border-beer-brown transition">
+                  View Officer Duties
+                </Link>
               </div>
             </div>
           </div>
