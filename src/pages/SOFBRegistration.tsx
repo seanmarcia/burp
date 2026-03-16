@@ -1,4 +1,4 @@
-import { ArrowLeft, UserPlus, ClipboardCheck, Info, Clock, MapPin } from 'lucide-react';
+import { ArrowLeft, UserPlus, ClipboardCheck, Info, MapPin } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 

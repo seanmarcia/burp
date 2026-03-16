@@ -1,4 +1,4 @@
-import { Award, Calendar, MapPin, CheckCircle, Info, Trophy, Users, Beaker } from 'lucide-react';
+import { Award, Calendar, MapPin, CheckCircle, Trophy, Users, Beaker } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const SOFB = () => {

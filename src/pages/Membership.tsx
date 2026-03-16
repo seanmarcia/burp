@@ -1,5 +1,4 @@
 import { UserPlus, CreditCard, Mail, Gift, ShieldCheck, Heart } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Membership = () => {
   const benefits = [

@@ -1,4 +1,4 @@
-import { Shield, Users, Scale, Landmark, PenTool, Calendar, Award, Book, ScrollText, ChevronDown, ChevronUp, FileText } from 'lucide-react';
+import { Shield, Users, Scale, Landmark, PenTool, Award, Book, ScrollText, ChevronDown, ChevronUp, FileText } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 

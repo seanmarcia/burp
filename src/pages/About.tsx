@@ -1,4 +1,4 @@
-import { Beer, History, Shield, Users, Landmark } from 'lucide-react';
+import { Beer, History, Shield, Landmark } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import meetingPhoto from '../assets/meeting-czech-talk.jpg';
 
