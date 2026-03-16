@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-beer-amber: #d4a017;
+  --color-beer-brown: #5d3a1a;
+  --color-beer-cream: #f5f5dc;
+  --color-beer-background: #fffaf0;
+  
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-beer-background text-beer-brown font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold text-beer-brown;
+  }
+}
