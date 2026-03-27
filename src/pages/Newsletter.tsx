@@ -55,10 +55,15 @@ const Newsletter = () => {
                 <span className="mx-1">•</span>
                 <span>{issue.size}</span>
               </div>
-              <button className="flex items-center justify-center gap-2 w-full py-3 bg-beer-cream/30 text-beer-brown rounded-xl font-bold text-sm hover:bg-beer-blue hover:text-white transition">
+              <a 
+                href="https://burp.org/newsletter" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center justify-center gap-2 w-full py-3 bg-beer-cream/30 text-beer-brown rounded-xl font-bold text-sm hover:bg-beer-blue hover:text-white transition"
+              >
                 <Download className="h-4 w-4" />
-                Download PDF
-              </button>
+                Access on burp.org
+              </a>
             </div>
           ))}
         </div>
@@ -78,7 +83,7 @@ const Newsletter = () => {
                 placeholder="your@email.com" 
                 className="flex-grow px-6 py-4 bg-white/10 border border-white/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-beer-amber placeholder:text-white/30"
               />
-              <button className="px-8 py-4 bg-beer-amber text-beer-brown font-bold rounded-xl hover:scale-105 transition shadow-lg whitespace-nowrap">
+              <button className="px-8 py-4 bg-beer-amber text-white font-bold rounded-xl hover:scale-105 transition shadow-lg whitespace-nowrap">
                 Subscribe
               </button>
             </form>

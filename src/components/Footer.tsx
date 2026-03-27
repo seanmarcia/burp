@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="#" className="hover:text-beer-amber transition-colors"><Facebook className="h-5 w-5" /></a>
               <a href="#" className="hover:text-beer-amber transition-colors"><Twitter className="h-5 w-5" /></a>
-              <a href="#" className="hover:text-beer-amber transition-colors"><Mail className="h-5 w-5" /></a>
+              <a href="mailto:info@burp.org" className="hover:text-beer-amber transition-colors"><Mail className="h-5 w-5" /></a>
             </div>
           </div>
           

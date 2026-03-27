@@ -148,10 +148,10 @@ const Bylaws = () => {
               <h4 className="font-bold text-beer-brown group-hover:text-beer-blue transition-colors mb-2 uppercase tracking-wide text-sm">Articles of Incorporation</h4>
               <p className="text-xs text-beer-brown/60 leading-relaxed">The foundational legal document filed with the Commonwealth of Virginia.</p>
             </a>
-            <a href="#" className="p-6 bg-beer-cream/20 rounded-2xl border border-beer-brown/10 hover:border-beer-blue transition group">
+            <Link to="/about/officer-duties" className="p-6 bg-beer-cream/20 rounded-2xl border border-beer-brown/10 hover:border-beer-blue transition group">
               <h4 className="font-bold text-beer-brown group-hover:text-beer-blue transition-colors mb-2 uppercase tracking-wide text-sm">Officer Duties & Policies</h4>
               <p className="text-xs text-beer-brown/60 leading-relaxed">Detailed operational responsibilities for each Minister and Assistant Minister.</p>
-            </a>
+            </Link>
           </div>
         </div>
 

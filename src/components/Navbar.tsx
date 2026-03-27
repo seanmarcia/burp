@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/burp-logo.png';
+import logo from '../assets/burp.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,9 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-2">
-              <img src={logo} alt="BURP Logo" className="h-10 w-auto" />
+              <div className="bg-white/90 p-1 rounded-full shadow-sm">
+                <img src={logo} alt="BURP Logo" className="h-8 w-8 object-contain" />
+              </div>
               <span className="text-xl font-bold tracking-tight">BURP</span>
             </Link>
             <div className="hidden md:ml-6 md:flex md:space-x-8">

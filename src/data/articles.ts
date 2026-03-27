@@ -123,5 +123,123 @@ export const articlesData: Record<string, ArticleContent> = {
       '**How to make one:** Use Dry Malt Extract (DME) to create a small batch of wort with a gravity of about 1.030-1.040. Boil, cool, and add your yeast. Using a stir plate will significantly increase the yeast cell count by providing constant aeration.',
       '**Pitching:** Allow the starter to ferment out (usually 24-48 hours). You can either pitch the entire starter or "cold crash" it in the fridge, pour off the spent beer (decant), and pitch only the concentrated yeast slurry.'
     ]
+  },
+  'an-introduction-to-carbonating-beers': {
+    slug: 'an-introduction-to-carbonating-beers',
+    title: 'An Introduction to Carbonating Beers',
+    category: 'Technique',
+    author: 'Carbonation Expert',
+    content: [
+      'Carbonation is the final touch that brings your beer to life. It affects not only the appearance (the head) but also the mouthfeel and how the flavors are delivered to your palate.',
+      'There are two primary ways for homebrewers to carbonate their beer: natural bottle conditioning and forced carbonation.',
+      '**Bottle Conditioning:** This involves adding a small, measured amount of "priming sugar" to the fermented beer just before bottling. The remaining yeast in the beer will ferment this sugar, creating CO2 that stays trapped inside the bottle. Typically, this takes 2-3 weeks at room temperature.',
+      '**Forced Carbonation:** This is done in kegs by applying CO2 pressure from a tank. The gas dissolves into the cold beer over several days (or more quickly if you use the "burst carbonation" method). It allows for much more precise control over the carbonation level.',
+      'Different beer styles require different volumes of CO2. For example, British Bitters are typically low (1.5-2.0 volumes), while Belgian Tripels or Hefeweizens are much higher (3.0-4.5 volumes).'
+    ]
+  },
+  'brewing-pale-lager': {
+    slug: 'brewing-pale-lager',
+    title: 'Brewing Pale Lager',
+    category: 'Technique',
+    author: 'Lager Specialist',
+    content: [
+      'Brewing a clean, crisp pale lager is often considered a "rite of passage" for advanced homebrewers. Unlike ales, lagers have nowhere for off-flavors to hide.',
+      '**Temperature Control:** This is the most critical factor. Lager yeast (Saccharomyces pastorianus) works best at 45–55 °F (7–13 °C). Fermenting too warm will produce esters and phenols that are inappropriate for the style.',
+      '**The Pitching Rate:** You need significantly more yeast for a lager than for an ale—typically double the cell count. A large yeast starter is essential.',
+      '**Lagering:** After fermentation is complete, the beer should be "lagered" (stored cold) at near-freezing temperatures for several weeks. This allows the yeast to clean up, the proteins to settle, and the flavors to mellow into the classic crisp character.',
+      '**Water Chemistry:** For a classic Czech or German-style pilsner, starting with very soft water allows the delicate malt and hop characters to shine through without being harsh.'
+    ]
+  },
+  'dark-mild': {
+    slug: 'dark-mild',
+    title: 'Dark Mild',
+    category: 'Recipe',
+    author: 'English Ale Fan',
+    content: [
+      'Dark Mild is a classic English session ale that is unfortunately rare in the United States. It is a beer that provides a huge amount of flavor and complexity at a very low ABV (usually 3.0-3.8%).',
+      '**The Malt Bill:** This is where the magic happens. Use a high-quality British Pale Ale malt (like Maris Otter) as the base. Add a mix of Crystal 60L, Crystal 120L, Chocolate malt, and perhaps a touch of Black malt. Some brewers also use flaked maize or invert sugar for authenticity.',
+      '**Hops:** Hops should be restrained. Use traditional English varieties like East Kent Goldings or Fuggles. The goal is just enough bitterness to balance the malt sweetness.',
+      '**Yeast:** Use a characterful English ale yeast that leaves some residual sweetness and provides those classic fruity esters.',
+      '**Serving:** Ideally, Dark Mild should be served at cellar temperature with low carbonation to mimic the experience of a fresh cask ale.'
+    ]
+  },
+  'dusseldorf-alt': {
+    slug: 'dusseldorf-alt',
+    title: 'Dusseldorf Alt',
+    category: 'Recipe',
+    author: 'German Heritage',
+    content: [
+      'Altbier (German for "old beer") is the traditional style of Düsseldorf. It is a "hybrid" style: it is fermented with an ale yeast but then conditioned cold like a lager.',
+      '**The Grist:** German Pilsner and Munich malts form the core. A small amount of Carafa Special (de-husked chocolate malt) provides the deep amber-to-copper color without adding roasted or acrid flavors.',
+      '**Hops:** This is a firm, bitter style. Use noble German hops like Spalt, Tettnang, or Hallertau. The bitterness should be clean and assertive.',
+      '**Fermentation:** Use a dedicated Altbier yeast strain. Ferment cool (around 58–62 °F) to keep the yeast character clean, then lager for 4-6 weeks.',
+      'The result should be a brilliantly clear, copper-colored beer with a rich, nutty malt profile and a sharp, clean hop finish.'
+    ]
+  },
+  'rye-american-amber-ale': {
+    slug: 'rye-american-amber-ale',
+    title: 'Rye American Amber Ale',
+    category: 'Recipe',
+    author: 'Hop Head',
+    content: [
+      'This recipe takes the classic American Amber Ale and adds the unique, spicy kick of rye malt.',
+      '**Rye Malt:** Aim for about 10-15% of the total grist. Rye adds a wonderful grainy complexity and a slickness to the mouthfeel. Be careful, as too much rye can make the mash "sticky" and lead to a stuck sparge.',
+      '**The Hops:** Use bold American varieties like Centennial, Chinook, or Simcoe. The citrusy and piney notes of these hops pair perfectly with the spiciness of the rye.',
+      '**The Balance:** Unlike an IPA, an Amber Ale needs a solid malt backbone. Use Crystal 40L or 60L to provide some caramel sweetness and body to support the hops and the rye.',
+      '**The Yeast:** A clean American ale yeast (US-05) is the best choice to let the ingredients speak for themselves.'
+    ]
+  },
+  'american-stout-black-scoter': {
+    slug: 'american-stout-black-scoter',
+    title: 'American Stout (Black Scoter)',
+    category: 'Recipe',
+    author: 'Stout Enthusiast',
+    content: [
+      'The "Black Scoter" is a robust American Stout designed for the cold winters of the Mid-Atlantic. It is dark, heavy, and unapologetically hoppy.',
+      '**The Roasted Grains:** Use a combination of Roasted Barley and Black Patent malt for that classic coffee and dark chocolate character. About 10% of the grist should be roasted malts.',
+      '**American Hop Character:** Unlike English stouts, American stouts feature significant late-addition hops and even dry-hopping. Use high-alpha hops like Columbus or Cascade.',
+      '**Body:** This beer should have a full mouthfeel. Don\'t be afraid to mash a bit higher (154–156 °F) to leave some unfermentable sugars for body.',
+      'The name comes from the Black Scoter, a sea duck often seen on the Chesapeake Bay during the winter months.'
+    ]
+  },
+  'food-and-beer-pairing': {
+    slug: 'food-and-beer-pairing',
+    title: 'Food and Beer Pairing',
+    category: 'Technical',
+    author: 'BURP Cicerone',
+    content: [
+      'Beer is often a better partner for food than wine because of its wide range of flavors, carbonation, and the presence of hops. The key to a great pairing is the "Three Cs".',
+      '**Complement:** Match similar flavors. A rich, chocolatey Imperial Stout pairs beautifully with a dark chocolate cake.',
+      '**Contrast:** Use opposing flavors to create balance. The sharp, fruity acidity of a Berliner Weisse can cut through the richness of a fatty dish like fried chicken.',
+      '**Cut:** Carbonation and hop bitterness are excellent at "cutting" through heavy fats and cleaning the palate between bites.',
+      '**Intensity:** Always match the intensity of the beer with the intensity of the food. A delicate Pilsner will be overwhelmed by a spicy curry, while a Barleywine will crush a light salad.'
+    ]
+  },
+  'homebrew-supply-shops': {
+    slug: 'homebrew-supply-shops',
+    title: 'Homebrew Supply Shops',
+    category: 'Resource',
+    author: 'Community Hub',
+    content: [
+      'Supporting your local homebrew supply shop (LHBS) is vital for the health of the brewing community. Here are some resources for brewers in the DC/MD/VA area.',
+      '**Maryland:** Check out Maryland Homebrew in Columbia. They have an extensive selection of grains and a very knowledgeable staff.',
+      '**Virginia:** myLHBS in Falls Church is a staple for Northern Virginia brewers, offering everything from basic kits to advanced hardware.',
+      '**D.C.:** While there are fewer shops in the District itself, many members participate in group buys for grain and hops through the BURP forum.',
+      '**Online:** For specialty items not found locally, shops like Northern Brewer or MoreBeer offer fast shipping to our region.',
+      'Always check the BURP forum for current member discounts at these locations!'
+    ]
+  },
+  'understanding-bjcp-styles': {
+    slug: 'understanding-bjcp-styles',
+    title: 'Understanding BJCP Styles',
+    category: 'Technical',
+    author: 'BJCP Judge',
+    content: [
+      'The Beer Judge Certification Program (BJCP) provides the standards used in almost all homebrew competitions. Understanding these guidelines is key to entering and winning.',
+      '**The Categories:** The BJCP divides beers into categories based on their history and characteristics. For example, Category 1 covers Standard American Beer, while Category 21 covers IPAs.',
+      '**Judging Criteria:** Judges evaluate beer based on four main sections: Aroma, Appearance, Flavor, and Mouthfeel. Each section has a specific point value on the scoresheet.',
+      '**Entering a Competition:** When you enter, you must specify the style. It doesn\'t matter what you intended to brew; what matters is what is in the bottle. If your "Amber Ale" tastes exactly like an IPA, you should probably enter it as an IPA.',
+      '**The Score:** A perfect score is 50. Most well-made homebrews score in the 30s ("Very Good"), while scores above 40 ("Excellent") are required to reach the Best of Show round.'
+    ]
   }
 };

@@ -58,7 +58,7 @@ const Competitions = () => {
 
             <section className="bg-white rounded-3xl p-10 border border-beer-brown/5 shadow-sm">
               <div className="flex flex-col md:flex-row gap-8 items-start mb-8">
-                <img src={sofbLogo} alt="SOFB Logo" className="w-32 h-auto rounded-lg shadow-md border border-beer-brown/10" />
+                <img src={sofbLogo} alt="SOFB Logo" className="w-32 h-auto rounded-lg shadow-md border border-beer-brown/10 mix-blend-multiply" />
                 <div>
                   <h2 className="text-3xl mb-4 flex items-center gap-3">
                     <Award className="text-beer-amber h-8 w-8" />
@@ -109,9 +109,9 @@ const Competitions = () => {
                     Register your entry at the meeting check-in desk.
                   </li>
                 </ul>
-                <button className="w-full py-4 bg-beer-amber text-beer-brown rounded-xl font-bold hover:bg-opacity-90 transition shadow-lg uppercase tracking-widest text-sm">
+                <Link to="/sofb/rules" className="block w-full py-4 bg-beer-amber text-beer-brown rounded-xl font-bold hover:bg-opacity-90 transition shadow-lg uppercase tracking-widest text-sm text-center">
                   Full Rulebook
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -123,9 +123,9 @@ const Competitions = () => {
               <p className="text-beer-brown/70 text-sm leading-relaxed mb-6">
                 Help support the longest-running homebrew competition in the region! We offer various sponsorship tiers for local businesses and breweries.
               </p>
-              <button className="text-beer-amber font-bold text-sm hover:underline">
+              <Link to="/sofb/sponsorship" className="text-beer-amber font-bold text-sm hover:underline">
                 Sponsor SOFB 2026 →
-              </button>
+              </Link>
             </div>
 
             <div className="bg-white rounded-3xl p-8 border border-beer-brown/5 shadow-sm">
@@ -136,9 +136,9 @@ const Competitions = () => {
               <p className="text-beer-brown/70 text-sm leading-relaxed mb-6">
                 Interested in becoming a BJCP judge? BURP hosts study groups and sensory training sessions to help you earn your certification.
               </p>
-              <button className="text-beer-amber font-bold text-sm hover:underline">
+              <Link to="/enlightenment" className="text-beer-amber font-bold text-sm hover:underline">
                 View Training Schedule →
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
-import { UserPlus, CreditCard, Mail, Gift, ShieldCheck, Heart } from 'lucide-react';
+import { UserPlus, CreditCard, Mail, Gift, ShieldCheck, Heart, Clock, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Membership = () => {
   const benefits = [
@@ -24,20 +25,45 @@ const Membership = () => {
     }
   ];
 
+  const membershipLevels = [
+    {
+      name: "Individual Membership",
+      description: "Standard membership for one person.",
+      options: [
+        { label: "1 Year", price: "$25.00" },
+        { label: "2 Years", price: "$47.50" },
+        { label: "3 Years", price: "$70.50" },
+        { label: "5 Years", price: "$112.50" }
+      ]
+    },
+    {
+      name: "Co-Membership",
+      description: "Bundle for up to 2 members in the same household.",
+      options: [
+        { label: "1 Year", price: "$30.00" },
+        { label: "2 Years", price: "$57.00" },
+        { label: "3 Years", price: "$84.50" },
+        { label: "5 Years", price: "$135.00" }
+      ]
+    }
+  ];
+
   return (
     <div className="bg-beer-cream/10 min-h-screen py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-16">
-          <h1 className="text-5xl mb-6 text-beer-brown">Membership</h1>
+          <h1 className="text-5xl mb-6 text-beer-brown">Join BURP</h1>
           <p className="text-xl text-beer-brown/70 leading-relaxed">
-            Join the Mid-Atlantic's premier homebrewing community. Whether you're a seasoned pro or just thinking about your first batch, there's a place for you in BURP.
+            Brewers United for Real Potables (BURP) has been the premier homebrewing community in the DC area since 1981. Join us to refine your craft and share your passion.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
           <div className="lg:col-span-2 space-y-12">
+            
+            {/* Benefits Section */}
             <section className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-beer-brown/5 border-t-4 border-t-beer-blue">
-              <h2 className="text-3xl font-bold mb-8 text-beer-brown">Why Join BURP?</h2>
+              <h2 className="text-3xl font-bold mb-8 text-beer-brown">Member Benefits</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {benefits.map((benefit, i) => (
                   <div key={i} className="flex gap-4">
@@ -53,40 +79,47 @@ const Membership = () => {
               </div>
             </section>
 
-            <section className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-beer-brown/5 border-t-4 border-t-beer-red">
-              <h2 className="text-3xl font-bold mb-8 text-beer-brown">Membership Tiers</h2>
-              <div className="space-y-6">
-                <div className="p-6 bg-beer-cream/20 rounded-2xl border border-beer-brown/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                  <div>
-                    <h3 className="text-xl font-bold text-beer-brown mb-1">Standard Individual Membership</h3>
-                    <p className="text-beer-brown/60 text-sm">Full access to all club benefits for one person.</p>
+            {/* Membership Tiers Section */}
+            <section className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-beer-brown/5 border-t-4 border-t-beer-amber">
+              <h2 className="text-3xl font-bold mb-8 text-beer-brown">Membership Levels</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {membershipLevels.map((level, i) => (
+                  <div key={i} className={`p-8 rounded-3xl border-2 flex flex-col h-full ${level.highlight ? 'border-beer-amber bg-beer-amber/5' : 'border-beer-brown/10 bg-white'}`}>
+                    {level.highlight && (
+                      <span className="bg-beer-amber text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest w-fit mb-4">
+                        {level.highlight}
+                      </span>
+                    )}
+                    <h3 className="text-2xl font-bold text-beer-brown mb-2">{level.name}</h3>
+                    <p className="text-beer-brown/60 text-sm mb-8">{level.description}</p>
+                    
+                    <div className="space-y-3 mt-auto">
+                      {level.options.map((opt, j) => (
+                        <div key={j} className="flex justify-between items-center py-2 border-b border-beer-brown/5 last:border-0">
+                          <span className="font-bold text-sm">{opt.label}</span>
+                          <span className="text-beer-blue font-bold">{opt.price}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <div className="text-right">
-                    <span className="text-3xl font-bold text-beer-blue">$20</span>
-                    <span className="text-beer-brown/50 text-sm font-medium"> / year</span>
-                  </div>
-                </div>
-                
-                <div className="p-6 bg-beer-blue/5 rounded-2xl border border-beer-blue/20 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-beer-blue text-white px-4 py-1 text-xs font-bold uppercase tracking-widest rounded-bl-xl">Best Value</div>
-                  <div>
-                    <h3 className="text-xl font-bold text-beer-brown mb-1">Family Membership</h3>
-                    <p className="text-beer-brown/60 text-sm">Full access for two people residing at the same address.</p>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-3xl font-bold text-beer-blue">$30</span>
-                    <span className="text-beer-brown/50 text-sm font-medium"> / year</span>
-                  </div>
-                </div>
+                ))}
+              </div>
+            </section>
 
-                <div className="p-6 bg-beer-amber/10 rounded-2xl border border-beer-amber/20 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                  <div>
-                    <h3 className="text-xl font-bold text-beer-brown mb-1">Lifetime Honorary</h3>
-                    <p className="text-beer-brown/60 text-sm">Awarded by the Board for exceptional service to the club.</p>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-xl font-bold text-beer-amber uppercase tracking-widest">Honorary</span>
-                  </div>
+            {/* Important Info Section */}
+            <section className="bg-beer-brown text-white rounded-3xl p-8 md:p-10 shadow-xl">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Clock className="h-6 w-6 text-beer-amber" />
+                Renewal & Policies
+              </h3>
+              <div className="grid md:grid-cols-2 gap-8 text-sm text-white/80">
+                <div className="space-y-4">
+                  <p><strong className="text-white">Non-Recurring Payments:</strong> All memberships are non-recurring. You will need to manually renew your subscription through the portal once it expires.</p>
+                  <p><strong className="text-white">Manual Renewal:</strong> You can return to this page to renew your membership at any time during the expiration month.</p>
+                </div>
+                <div className="space-y-4">
+                  <p><strong className="text-white">Cookie Requirement:</strong> Browser cookies **must be enabled** on your device to successfully complete the sign-up or login process.</p>
+                  <p><strong className="text-white">Data Privacy:</strong> BURP respects your privacy. Membership data is used exclusively for club operations and communications.</p>
                 </div>
               </div>
             </section>
@@ -97,16 +130,21 @@ const Membership = () => {
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
                   <CreditCard className="h-6 w-6" />
-                  Join Now
+                  Sign Up Today
                 </h3>
                 <p className="text-white/80 mb-8 text-sm leading-relaxed">
-                  Ready to join the BURP family? We use a secure online portal for membership registration and dues payment.
+                  Join BURP through our secure Wild Apricot portal. Select your level and complete the registration form to get started.
                 </p>
-                <a href="#" className="block w-full py-4 bg-beer-amber text-beer-brown rounded-xl font-bold hover:scale-105 transition text-center shadow-lg uppercase tracking-widest text-sm mb-4">
-                  Pay with PayPal/Credit Card
+                <a 
+                  href="https://burp.org/join-us" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block w-full py-4 bg-beer-amber text-white rounded-xl font-bold hover:scale-105 transition text-center shadow-lg uppercase tracking-widest text-sm mb-4"
+                >
+                  Go to Registration Form
                 </a>
-                <p className="text-xs text-center text-white/50 italic">
-                  Membership runs from January to December.
+                <p className="text-xs text-center text-white/40 italic">
+                  Payments are processed securely via PayPal or Credit Card.
                 </p>
               </div>
             </div>
@@ -114,14 +152,14 @@ const Membership = () => {
             <div className="bg-white rounded-3xl p-8 border border-beer-brown/5 shadow-sm">
               <h3 className="font-bold text-beer-brown mb-4 flex items-center gap-2">
                 <Heart className="h-5 w-5 text-beer-red" />
-                Support the Club
+                Honorary Members
               </h3>
               <p className="text-beer-brown/70 text-sm leading-relaxed mb-6">
-                Not a brewer but want to support our mission? You can subscribe to our newsletter as a non-voting member.
+                Lifetime Honorary memberships are awarded by the Board of Ministers for exceptional service to the club and the homebrewing community.
               </p>
-              <button className="text-beer-blue font-bold text-sm hover:underline">
-                Subscribe to Newsletter →
-              </button>
+              <Link to="/about/bylaws" className="text-beer-blue font-bold text-sm hover:underline block w-fit">
+                View Club Bylaws →
+              </Link>
             </div>
           </div>
         </div>

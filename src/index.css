@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-beer-amber: #fec310;
-  --color-beer-brown: #4a312c;
-  --color-beer-red: #a3311e;
-  --color-beer-blue: #008cc9;
-  --color-beer-cream: #f9f4e8;
-  --color-beer-background: #fffcf5;
+  --color-beer-amber: #d4941e;
+  --color-beer-brown: #1e293b;
+  --color-beer-red: #ef4444;
+  --color-beer-blue: #1a5e82;
+  --color-beer-cream: #f1f5f9;
+  --color-beer-background: #ffffff;
   
   --font-heading: "Playfair Display", serif;
   --font-body: "Inter", sans-serif;
