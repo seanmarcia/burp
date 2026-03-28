@@ -1,4 +1,4 @@
-import { UserPlus, CreditCard, Mail, Gift, ShieldCheck, Heart, Clock, Users } from 'lucide-react';
+import { UserPlus, CreditCard, Mail, Gift, ShieldCheck, Heart, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Membership = () => {
@@ -25,7 +25,7 @@ const Membership = () => {
     }
   ];
 
-  const membershipLevels = [
+  const membershipLevels: { name: string; description: string; options: { label: string; price: string }[]; highlight?: string }[] = [
     {
       name: "Individual Membership",
       description: "Standard membership for one person.",
