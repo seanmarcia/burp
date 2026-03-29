@@ -22,6 +22,7 @@ const Navbar = () => {
               <Link to="/enlightenment" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">Enlightenment</Link>
               <Link to="/competitions" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">Competitions</Link>
               <Link to="/newsletter" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">BURP News</Link>
+              <Link to="/photos" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">Photos</Link>
               <Link to="/about" className="hover:text-beer-amber px-3 py-2 rounded-md text-sm font-medium transition-colors">About</Link>
             </div>
           </div>
@@ -45,6 +46,7 @@ const Navbar = () => {
             <Link to="/enlightenment" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">Enlightenment</Link>
             <Link to="/competitions" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">Competitions</Link>
             <Link to="/newsletter" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">BURP News</Link>
+            <Link to="/photos" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">Photos</Link>
             <Link to="/about" className="block hover:text-beer-amber px-3 py-2 rounded-md text-base font-medium">About</Link>
             <div className="pt-4 px-3">
               <Link to="/membership" className="block w-full bg-beer-amber text-beer-brown px-4 py-2 rounded-md text-base font-bold shadow-sm text-center">

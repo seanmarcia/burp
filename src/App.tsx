@@ -16,6 +16,7 @@ import Membership from './pages/Membership';
 import Newsletter from './pages/Newsletter';
 import About from './pages/About';
 import PreviousOfficers from './pages/PreviousOfficers';
+import Photos from './pages/Photos';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="about/bylaws" element={<Bylaws />} />
           <Route path="about/officer-duties" element={<OfficerDuties />} />
           <Route path="about/previous-officers" element={<PreviousOfficers />} />
+          <Route path="photos" element={<Photos />} />
         </Route>
       </Routes>
     </BrowserRouter>
